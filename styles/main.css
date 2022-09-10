@@ -1,0 +1,122 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+h1{
+  text-align: center;
+  color: white;
+  font-family: 'Bubbler One';
+}
+h2{
+  text-align: center;
+  color: Black;
+}
+p{
+  text-align: center;
+}
+/*home page-------------------------TIDY----------------------*/
+.cloud{
+  background-color: #d0cacd;
+  background-image: url(../images/cloudy.jpg);
+  background-blend-mode: multiply;
+  background-position: sticky;
+  top: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+#girl-cloud{
+  width: 240px;
+  height: auto;
+}
+.girl-cloud-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*nav bar--------------------------------------------------*/
+.home{
+  padding: 0 0 -150px 0;
+  margin: 0 0 -150px 0;
+  width:15em;
+  height:10em;
+}
+ul{
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+li{
+  float: right;
+  margin: 0 20px 0 0;
+  padding: 0 20px 0 0;
+}
+#logonav{
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: 'Bubbler One';
+  font-size: 20px;
+  margin: 5px;
+  text-decoration: none;
+}
+/* responsive blog index pages thumbnails--------------PUT IN SEPARATE CSS------------------------*/
+.desc{
+  padding: 10px;
+  text-align: left;
+}
+*{/*resets default*/
+  box-sizing: border-box;
+}
+.responsive{
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+@media screen and (min-width:1200) {
+  .responsive{
+    width: 19%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width:768){
+  .responsive{
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width:320px){
+  .responsive{
+    width: 100%
+  }
+}
+.clearfix:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+/* each core blog post--------------------------------------------*/
+.sky-para{
+  max-width:700px;
+  margin:0 auto 30px;
+
+}
+/* paragraph on box model*/
+.box{
+  background-color: #d4e1e6;
+  width: 32%;
+  margin: 8px;
+  border: 5px solid white;
+  padding: 10px;
+  float: left;
+}
