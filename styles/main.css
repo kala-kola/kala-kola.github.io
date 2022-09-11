@@ -17,7 +17,7 @@ p{
 /*home page-------------------------TIDY----------------------*/
 .cloud{
   background-color: #d0cacd;
-  background-image: url(../images/cloudy.jpg);
+  background-image: url(../images/cloud55.jpg);
   background-blend-mode: multiply;
   background-position: sticky;
   top: 0px;
@@ -81,11 +81,11 @@ li a{
 .responsive{
   padding: 0 6px;
   float: left;
-  width: 24.99999%;
+  width: 32%;
 }
 @media screen and (min-width:1200) {
   .responsive{
-    width: 19%;
+    width: 24.9%;
     margin: 6px 0;
   }
 }
@@ -119,4 +119,8 @@ li a{
   border: 5px solid white;
   padding: 10px;
   float: left;
+}
+#list{
+  list-style-type:square;
+  padding: 15px;
 }
