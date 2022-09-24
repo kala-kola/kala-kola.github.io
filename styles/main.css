@@ -90,37 +90,45 @@ p{
   margin:0 auto 30px;
 }
 
-/*-------------------------------list id in EQ blag-----------------------------------------*/
+/*-------------------------------list id in EQ blog-----------------------------------------*/
 #list{
   list-style-type:square;
   padding: 15px;
 }
 /*-------------------------------MEDIA QUERIES---------------------*/
 @media screen and (min-width: 1200px) {
-   p{
-      font-family: 'Bubbler One';
-      font-size: 2rem;
-      color: white;
-      }
+  h2{text-align: center;
+    color: #2a3d56;} 
+  p{font-family: monospace;
+      font-size: 1.7rem;
+      color: #141f2d;}
+  .cloud{background-color: #d0cacd;}
+  h2{text-align: center;
+    color: #edf2f9;
+    font-family:  'Bubbler One';
+    font-size: 2rem;}
+}
+
+
+@media screen and (max-width:768px){
+  h2{text-align: center;
+    color: #213349;
+    font-family:  'Bubbler One';
+    font-size: 1.6rem;}
+  p{font-family: Arial, Helvetica, sans-serif;}
+}
+
+
+
+@media screen and (max-width:320px){
   .cloud{
-      background-color: #d0cacd;
-    }
-}
-
-
-@media (max-width:768){
-  
-}
-@media (max-width:320px) {
-  
-  .even-columns{ 
-  display: flex;
-  flex-wrap: wrap;
+    background-color: #d0cacd;}
+  p{
+    font-family: monospace;
+    font-size: 3rem;
+    color: #23364e;
+    padding: 16em;}
+    .sky-para{
+      max-width:280px;
+      margin:0 auto 30px;} 
   }
-.thumb{
-    flex: 1 1 33%
-  }
-
-}
-  
-  
