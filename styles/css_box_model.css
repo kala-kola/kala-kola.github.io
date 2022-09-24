@@ -1,0 +1,16 @@
+*{/*resets default*/
+  box-sizing: border-box;
+}
+.box{
+  background-color: #d4e1e6;
+  width: 32%;
+  margin: 8px;
+  border: 5px solid white;
+  padding: 10px;
+  float: left;
+}
+.clearfix:after{
+  content:"";
+  display: table;
+  clear: both;
+}

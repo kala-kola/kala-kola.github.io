@@ -2,19 +2,7 @@ body, html {
   height: 100%;
   margin: 0;
 }
-h1{
-  text-align: center;
-  color: white;
-  font-family: 'Bubbler One';
-}
-h2{
-  text-align: center;
-  color: Black;
-}
-p{
-  text-align: center;
-}
-/*home page-------------------------TIDY----------------------*/
+/*-------------------------backdrop----------------------*/
 .cloud{
   background-color: #d0cacd;
   background-image: url(../images/cloud55.jpg);
@@ -25,18 +13,13 @@ p{
   background-repeat: no-repeat;
   height: 100%;
   overflow: auto;
-  padding: 0;
-  margin: 0;
-}
-#girl-cloud{
-  width: 240px;
-  height: auto;
 }
 .girl-cloud-img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 25%;
+  height: auto;
   border-radius: 7%;
 }
 /*nav bar--------------------------------------------------*/
@@ -71,57 +54,73 @@ li a{
   margin: 5px;
   text-decoration: none;
 }
-/* responsive blog index pages thumbnails--------------PUT IN SEPARATE CSS------------------------*/
+/*------------------------------paragraph and headers-----------------------------*/
+h1{
+  text-align: center;
+  color: white;
+  font-family: 'Bubbler One';
+}
+h2{
+  text-align: center;
+  color: #1e2c3e;
+}
+p{
+  text-align: center;
+  color: #1e2c3e
+}
+/* ----------------------description and images on core and tech index pages-------------*/
+.even-columns{
+  display: flex;
+}
+.thumb{
+  margin: 2.5%;
+  flex-basis: 100%;
+
+}
+
 .desc{
   padding: 10px;
   text-align: left;
+  color: #fcf6eb;
 }
-*{/*resets default*/
-  box-sizing: border-box;
-}
-.responsive{
-  padding: 0 6px;
-  float: left;
-  width: 32%;
-}
-@media screen and (min-width:1200) {
-  .responsive{
-    width: 24.9%;
-    margin: 6px 0;
-  }
-}
-@media only screen and (max-width:768){
-  .responsive{
-    width: 50%;
-    margin: 6px 0;
-  }
-}
-@media only screen and (max-width:320px){
-  .responsive{
-    width: 100%
-  }
-}
-.clearfix:after{
-  content:"";
-  display: table;
-  clear: both;
-}
-/* each core blog post--------------------------------------------*/
+
+/* ---------------------------blog post paragraph--------------------------------------------*/
 .sky-para{
   max-width:700px;
   margin:0 auto 30px;
+}
 
-}
-/* paragraph on box model*/
-.box{
-  background-color: #d4e1e6;
-  width: 32%;
-  margin: 8px;
-  border: 5px solid white;
-  padding: 10px;
-  float: left;
-}
+/*-------------------------------list id in EQ blag-----------------------------------------*/
 #list{
   list-style-type:square;
   padding: 15px;
 }
+/*-------------------------------MEDIA QUERIES---------------------*/
+@media screen and (min-width: 1200px) {
+   p{
+      font-family: 'Bubbler One';
+      font-size: 2rem;
+      color: white;
+      }
+  .cloud{
+      background-color: #d0cacd;
+    }
+}
+
+
+@media (max-width:768){
+  
+}
+@media (max-width:320px) {
+  
+  .even-columns{ 
+  display: flex;
+  flex-wrap: wrap;
+  }
+.thumb{
+    flex: 1 1 33%
+  }
+
+}
+  
+  
