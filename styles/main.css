@@ -22,6 +22,10 @@ body, html {
   height: auto;
   border-radius: 7%;
 }
+.div{
+  position: absolute;
+  border-radius: 50% 50%;
+}
 /*nav bar--------------------------------------------------*/
 .home{
   padding: 0 0 -150px 0;
