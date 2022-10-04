@@ -102,29 +102,6 @@ p{
 
 }
 /*-------------------------------MEDIA QUERIES---------------------*/
-@media screen and (min-width: 1200px) {
-  h2{text-align: center;
-    color: #2a3d56;} 
-  p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 1.25rem;
-      color: #141f2d;}
-  .cloud{background-color: #d0cacd;}
-  h2{text-align: center;
-    color: #edf2f9;
-    font-family:  'Bubbler One';
-    font-size: 2rem;}
-}
-
-
-@media screen and (max-width:768px){
-  h2{text-align: center;
-    color: #213349;
-    font-family:  'Bubbler One';
-    font-size: 1.6rem;}
-  p{font-family: Arial, Helvetica, sans-serif;}
-}
-
-
 
 @media screen and (max-width:320px){
   .cloud{
@@ -137,4 +114,25 @@ p{
     .sky-para{
       max-width:280px;
       margin:0 auto 30px;} 
+  }
+
+  @media screen and (max-width:768px){
+    h2{text-align: center;
+      color: #213349;
+      font-family:  'Bubbler One';
+      font-size: 1.6rem;}
+    p{font-family: Arial, Helvetica, sans-serif;}
+  }
+
+  @media screen and (min-width: 1200px) {
+    h2{text-align: center;
+      color: #2a3d56;} 
+    p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.25rem;
+        color: #141f2d;}
+    .cloud{background-color: #d0cacd;}
+    h2{text-align: center;
+      color: #edf2f9;
+      font-family:  'Bubbler One';
+      font-size: 2rem;}
   }
